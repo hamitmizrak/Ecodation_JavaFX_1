@@ -4,32 +4,97 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!--for project information-->
     <groupId>com.hamitmizrak</groupId>
     <artifactId>Ecodation_JavaFX</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Ecodation_JavaFX</name>
 
+    <url/>
+    <licenses>
+        <license/>
+    </licenses>
+    <developers>
+        <developer/>
+    </developers>
+    <scm>
+        <connection/>
+        <developerConnection/>
+        <tag/>
+        <url/>
+    </scm>
+
+    <!--
+    war: java EE için kullanalım. JSP,servlet,html,css3
+    jar: Spring Boot için kullanalım
+    -->
+    <!--apache tomcat manuel için war ekliyorum-->
+    <!--<packaging>war</packaging>-->
+    <packaging>jar</packaging>
+
     <properties>
+        <encoding>UTF-8</encoding>
+        <java.version>17</java.version>
+
+        <!--for maven-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!--Jenkins - SonarQube - Ve Maven İçin Gerekli-->
+        <maven.compiler.release>23</maven.compiler.release>
+        <maven.compiler.source>23</maven.compiler.source>
+        <maven.compiler.target>23</maven.compiler.target>
+
+        <!--junit-->
         <junit.version>5.10.2</junit.version>
     </properties>
 
+    <!-- start dependencies-->
     <dependencies>
+
+        <!-- RDBMS H2DB-->
+        <!-- https://mvnrepository.com/artifact/h2db/h2db -->
+
+
+        <!-- RDBMS MYSQL-->
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.28</version>
+        </dependency>
+
+        <!--lombok-->
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- javafx-controls-->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>17.0.6</version>
         </dependency>
+
+        <!-- javafx-fxml-->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>17.0.6</version>
         </dependency>
+
+        <!-- controlsfx -->
         <dependency>
             <groupId>org.controlsfx</groupId>
             <artifactId>controlsfx</artifactId>
             <version>11.2.1</version>
         </dependency>
+
+        <!-- formsfx-core -->
         <dependency>
             <groupId>com.dlsc.formsfx</groupId>
             <artifactId>formsfx-core</artifactId>
@@ -41,6 +106,8 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <!-- validatorfx -->
         <dependency>
             <groupId>net.synedra</groupId>
             <artifactId>validatorfx</artifactId>
@@ -52,22 +119,30 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <!-- ikonli-javafx -->
         <dependency>
             <groupId>org.kordamp.ikonli</groupId>
             <artifactId>ikonli-javafx</artifactId>
             <version>12.3.1</version>
         </dependency>
+
+        <!-- bootstrapfx-core -->
         <dependency>
             <groupId>org.kordamp.bootstrapfx</groupId>
             <artifactId>bootstrapfx-core</artifactId>
             <version>0.4.0</version>
         </dependency>
+
+        <!-- junit.version -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- junit-jupiter-engine -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
@@ -77,6 +152,11 @@
     </dependencies>
 
     <build>
+
+        <!--apache tomcat manuel deployment için-->
+        <defaultGoal>spring-boot:run</defaultGoal>
+        <finalName>${project.artifactId}</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
