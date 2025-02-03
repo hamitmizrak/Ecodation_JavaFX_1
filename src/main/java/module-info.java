@@ -8,6 +8,7 @@ module com.hamitmizrak.ecodation_javafx {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires static lombok;
+    requires java.sql;
 
     opens com.hamitmizrak.ecodation_javafx to javafx.fxml;
     exports com.hamitmizrak.ecodation_javafx;
