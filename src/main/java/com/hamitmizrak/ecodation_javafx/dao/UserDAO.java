@@ -21,7 +21,7 @@ public class UserDAO {
         this.connection = DBConnection.getConnection();
     }
 
-    ///////////////////////////////////////////////////////////////
+    /// ////////////////////////////////////////////////////////////
     // REGISTER (KAYIT)
     public boolean registerUser(UserDTO userDTO) {
         String sql = "INSERT INTO users(username,password,email) VALUES (?,?,?)";
@@ -39,7 +39,7 @@ public class UserDAO {
     }
 
 
-    ///////////////////////////////////////////////////////////////
+    /// /////////////////////////////////////////////////////////////////////////////////////
     // LOGIN
     public UserDTO loginUser(String username, String password) {
         String sql = "SELECT  *  FROM users WHERE username=? AND password=?";
@@ -65,7 +65,7 @@ public class UserDAO {
         return null;
     }
 
-    ///////////////////////////////////////////////////////////////
+    /// ////////////////////////////////////////////////////////////
     // CRUD
     // LIST
     public List<UserDTO> getAllUsers() {

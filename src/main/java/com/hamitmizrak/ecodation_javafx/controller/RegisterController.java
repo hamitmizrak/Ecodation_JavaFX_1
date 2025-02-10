@@ -10,6 +10,11 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 
+/*
+RegisterController ile  resources/paketadi/register.fxml
+register.fxml ile ekran oluşturacağım.
+ */
+
 public class RegisterController {
 
     // import javafx.scene.control.TextField;
@@ -52,7 +57,7 @@ public class RegisterController {
         } catch (Exception e) {
             //throw new RuntimeException(e);
             e.printStackTrace();
-            showAlert("Hata", "Giriş Ekranına GEçiş Sırasında Hata meydana geldi", Alert.AlertType.ERROR);
+            showAlert("Hata", "Giriş Ekranına Geçiş Sırasında Hata meydana geldi", Alert.AlertType.ERROR);
         }
     } //end switchToLogin
 
@@ -70,10 +75,10 @@ public class RegisterController {
         if (userDAO.registerUser(user)) {
             showAlert("Başarılı", "Kayıt Başarılı", Alert.AlertType.INFORMATION);
 
-            // Kayıt başarılı ise Giriş(Login)
+            // Kayıt başarılı ise Giriş(Login) Sayfaına yönlendirsin.
             switchToLogin();
         } else {
-            showAlert("Hata", "Kayıt Başarıs", Alert.AlertType.ERROR);
+            showAlert("Hata", "Kayıt Başarısız.", Alert.AlertType.ERROR);
         }
     } // end register
 
