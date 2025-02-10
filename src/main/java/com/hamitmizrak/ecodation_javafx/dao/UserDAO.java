@@ -6,17 +6,16 @@ import com.hamitmizrak.ecodation_javafx.dto.UserDTO;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-// UserDAO
+// UserDAO (Database)
 public class UserDAO {
 
     // import java.sql.Connection;
     private Connection connection;
 
-    // Constructor
+    // Constructor (Database bağla)
     public UserDAO() {
         this.connection = DBConnection.getConnection();
     }
@@ -24,7 +23,7 @@ public class UserDAO {
     /// ////////////////////////////////////////////////////////////
     // REGISTER (KAYIT)
     public boolean registerUser(UserDTO userDTO) {
-        String sql = "INSERT INTO users(username,password,email) VALUES (?,?,?)";
+        String sql = "INSERT INTO users (username, password, email) VALUES (?,?,?)";
         try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
             preparedStatement.setString(1, userDTO.getUsername());
             preparedStatement.setString(2, userDTO.getPassword());
@@ -49,6 +48,7 @@ public class UserDAO {
 
             // Database Kayıt almak için
             ResultSet resultSet = preparedStatement.executeQuery();
+
             // Eğer kullanıcı varsa
             if (resultSet.next()) {
                 return new UserDTO(
@@ -60,12 +60,13 @@ public class UserDAO {
             } //end if
         } catch (Exception exception) {
             exception.printStackTrace();
-            return null;
         }
-        return null;
+        return null;// Eğer kullanıcı yoksa null dönder
     }
 
     /// ////////////////////////////////////////////////////////////
+    // Find, List için            => preparedStatement.executeQuery()
+    // Create,Update, Delete için => preparedStatement.executeUpdate()
     // CRUD
     // LIST
     public List<UserDTO> getAllUsers() {
@@ -84,10 +85,10 @@ public class UserDAO {
             }
         } catch (Exception exception) {
             exception.printStackTrace();
-            return null;
         }
         return users;
     } //end list
+
 
     // UPDATE
     public boolean updateUser(UserDTO userDTO) {
@@ -96,8 +97,11 @@ public class UserDAO {
             preparedStatement.setString(1, userDTO.getUsername());
             preparedStatement.setString(2, userDTO.getPassword());
             preparedStatement.setString(3, userDTO.getEmail());
+            preparedStatement.setInt(4, userDTO.getId());
+
             // database kayıt
             preparedStatement.executeUpdate();
+
         } catch (Exception exception) {
             exception.printStackTrace();
             return false;

@@ -42,16 +42,15 @@ public class RegisterController {
 
     /////////////////////////////////////////////////////////////////////////////////////////
     // Switch
-    @FXML
     private void switchToLogin() {
         try {
             // FXML Dosyalarını Yükle
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/hamitmizrak/ecodation_javafx/login.fxml"));
-            Parent parent = fxmlLoader.load();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/hamitmizrak/ecodation_javafx/view/login.fxml"));
+            Parent loginParent = fxmlLoader.load();
 
             // Var olan sahneyi alıp ve değiştirmek
             Stage stage = (Stage) usernameField.getScene().getWindow();
-            stage.setScene(new Scene(parent));
+            stage.setScene(new Scene(loginParent));
             stage.setTitle("Giriş Yap");
             stage.show();
 
@@ -73,6 +72,8 @@ public class RegisterController {
 
         // UserDTO
         UserDTO user = new UserDTO(0, username, password, email);
+
+        // KAyıt
         if (userDAO.registerUser(user)) {
             showAlert("Başarılı", "Kayıt Başarılı", Alert.AlertType.INFORMATION);
 

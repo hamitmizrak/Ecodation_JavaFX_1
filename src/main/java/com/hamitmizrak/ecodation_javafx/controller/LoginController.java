@@ -13,18 +13,23 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
+// import javafx.scene.control.TextField;
+// FXML dosyasındaki bileşeni Controller sınıfdındaki değişkene bağlar.
+//@FXML
+
 public class LoginController {
 
-    // import javafx.scene.control.TextField;
-    // FXML dosyasındaki bileşeni Controller sınıfdındaki değişkene bağlar.
+    /// //////////////////////////////////////////////////////////////////////////////////////
+    // Field (Veri tabanı işlemleri için)
+    private UserDAO userDAO = new UserDAO();
+
+    /// //////////////////////////////////////////////////////////////////////////////////////
+    // FXML Field
     @FXML
     private TextField usernameField;
 
     @FXML
     private TextField passwordField;
-
-    // Field (Veri tabanaı işlemleri için)
-    private UserDAO userDAO = new UserDAO();
 
     /// //////////////////////////////////////////////////////////////////////////////////////
     // ShowAlert
@@ -47,7 +52,7 @@ public class LoginController {
     } // onEnterPressed
 
     /// //////////////////////////////////////////////////////////////////////////////////////
-    // Logiin
+    // Login
     @FXML
     public void login() {
         // Kullanıcı girişi yaparken username, password
@@ -57,6 +62,7 @@ public class LoginController {
         // UserDTO
         UserDTO user = userDAO.loginUser(username, password);
 
+        // Eğer kullanıcı varsa
         if (user != null) {
             showAlert("Başarılı", "Giriş Başarılı", Alert.AlertType.INFORMATION);
 
@@ -68,29 +74,6 @@ public class LoginController {
     } // end login
 
     /// //////////////////////////////////////////////////////////////////////////////////////
-    // Switch
-    @FXML
-    private void switchToRegister(ActionEvent actionEvent) {
-        try {
-            // FXML Dosyalarını Yükle
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/hamitmizrak/ecodation_javafx/view/register.fxml"));
-            Parent parent = fxmlLoader.load();
-
-            // Var olan sahneyi alıp ve değiştirmek
-            Stage stage = (Stage) ((javafx.scene.Node) actionEvent.getSource()).getScene().getWindow();
-            stage.setScene(new Scene(parent));
-            stage.setTitle("Kayıt Ol");
-            stage.show();
-
-        } catch (Exception e) {
-            //throw new RuntimeException(e);
-            e.printStackTrace();
-            showAlert("Hata", "Kayıt Ekranı Yüklenemedi", Alert.AlertType.ERROR);
-        }
-    } //end switchToLogin
-
-    /// //////////////////////////////////////////////////////////////////////////////////////
-    ///
     /// // Eğer Giriş başarılı ise Admin  paneline Geçiş yapalım
     private void openAdminPane() {
         try {
@@ -111,5 +94,27 @@ public class LoginController {
             showAlert("Hata", "Admin Sayfası Yüklenemedi", Alert.AlertType.ERROR);
         }
     }
+
+    /// //////////////////////////////////////////////////////////////////////////////////////
+    // Register (Switch)
+    @FXML
+    private void switchToRegister(ActionEvent actionEvent) {
+        try {
+            // FXML Dosyalarını Yükle
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/hamitmizrak/ecodation_javafx/view/register.fxml"));
+            Parent parent = fxmlLoader.load();
+
+            // Var olan sahneyi alıp ve değiştirmek
+            Stage stage = (Stage) ((javafx.scene.Node) actionEvent.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(parent));
+            stage.setTitle("Kayıt Ol");
+            stage.show();
+
+        } catch (Exception e) {
+            //throw new RuntimeException(e);
+            e.printStackTrace();
+            showAlert("Hata", "Kayıt Ekranı Yüklenemedi", Alert.AlertType.ERROR);
+        }
+    } //end switchToLogin
 
 }  // end LoginController
