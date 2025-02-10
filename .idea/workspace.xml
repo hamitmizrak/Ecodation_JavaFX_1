@@ -4,14 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a1212ce-3ae8-41ae-8c7a-6712092485cc" name="Changes" comment="login.fxml">
+    <list default="true" id="2a1212ce-3ae8-41ae-8c7a-6712092485cc" name="Changes" comment="Login, Register">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/Admin.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/login.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/register.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx.view/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx.view/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx.view/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx.view/register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx.view/Admin.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx.view/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx.view/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx.view/images/login.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx.view/login.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx.view/register.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +73,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/1_Kodlar/Java Gui/Ecodation_JavaFX_1/src/main/resources/com/hamitmizrak/ecodation_javafx.view",
     "project.structure.last.edited": "Problems",
@@ -78,10 +85,12 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\src\main\resources\com\hamitmizrak\ecodation_javafx.view" />
+      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\src\main\java\com\hamitmizrak\ecodation_javafx" />
       <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1" />
       <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\src\main\resources\com\hamitmizrak\ecodation_javafx\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\src\main\resources\com\hamitmizrak\ecodation_javafx\view" />
       <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\pictures" />
     </key>
   </component>
@@ -215,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739204490405</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Login, Register">
+      <option name="closed" value="true" />
+      <created>1739206020965</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1739206020965</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -230,7 +247,8 @@
     <MESSAGE value="Controller, LoginController, register, UserDTO" />
     <MESSAGE value="register.fxml" />
     <MESSAGE value="login.fxml" />
-    <option name="LAST_COMMIT_MESSAGE" value="login.fxml" />
+    <MESSAGE value="Login, Register" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login, Register" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

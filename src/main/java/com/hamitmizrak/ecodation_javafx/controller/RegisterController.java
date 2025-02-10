@@ -17,8 +17,6 @@ register.fxml ile ekran oluşturacağım.
 
 public class RegisterController {
 
-    // import javafx.scene.control.TextField;
-    // FXML dosyasındaki bileşeni Controller sınıfdındaki değişkene bağlar.
     @FXML
     private TextField usernameField;
 
