@@ -27,7 +27,7 @@
 
 
 .vbox {
-    -fx-background-image: url('../images/dene.png');
+    -fx-background-image: url('../images/login.webp');
     -fx-background-size: cover; /* Resmi kaplayacak şekilde boyutlandırır */
     -fx-background-position: center; /* Resmi ortalar */
 }

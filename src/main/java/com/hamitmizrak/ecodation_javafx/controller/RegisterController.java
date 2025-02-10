@@ -42,6 +42,7 @@ public class RegisterController {
 
     /////////////////////////////////////////////////////////////////////////////////////////
     // Switch
+    @FXML
     private void switchToLogin() {
         try {
             // FXML Dosyalarını Yükle
