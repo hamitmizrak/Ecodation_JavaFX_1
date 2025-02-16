@@ -11,5 +11,7 @@ module com.hamitmizrak.ecodation_javafx {
     requires java.sql;
 
     opens com.hamitmizrak.ecodation_javafx to javafx.fxml;
+    opens com.hamitmizrak.ecodation_javafx.controller to javafx.fxml;  // <-- EKLENDİ
+    opens com.hamitmizrak.ecodation_javafx.dto to javafx.base; // javafx.base erişim izni
     exports com.hamitmizrak.ecodation_javafx;
 }
