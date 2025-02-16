@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.hamitmizrak.ecodation_javafx.controller.RegisterController"
+          alignment="center" hgap="10" vgap="10"
+          style="-fx-padding:20;">
+    <!--prefHeight="400.0" prefWidth="600.0"-->
+
+    <Label text="Kullanıcı Adı" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="usernameField" GridPane.rowIndex="0" GridPane.columnIndex="1"/> <!--</TextField>-->
+
+    <Label text="Kullanıcı Email" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="emailField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Label text="Kullanıcı Şifresi" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <PasswordField fx:id="passwordField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Button text="Kayıt Ol" onAction="#register" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+</GridPane>

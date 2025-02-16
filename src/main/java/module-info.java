@@ -1,7 +1,6 @@
-module com.hamitmizrak.vatcalculation {
+module com.hamitmizrak.ecodation_javafx {
     requires javafx.controls;
     requires javafx.fxml;
-    requires java.sql;
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
@@ -9,13 +8,8 @@ module com.hamitmizrak.vatcalculation {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires static lombok;
-    requires org.apache.poi.ooxml;
-    requires java.mail;
-    requires java.desktop;
+    requires java.sql;
 
-    opens com.hamitmizrak.vatcalculation to javafx.fxml;
-    opens com.hamitmizrak.vatcalculation.controller to javafx.fxml;  // <-- EKLENDİ
-    opens com.hamitmizrak.vatcalculation.dto to javafx.base; // javafx.base erişim izni
-
-    exports com.hamitmizrak.vatcalculation;
+    opens com.hamitmizrak.ecodation_javafx to javafx.fxml;
+    exports com.hamitmizrak.ecodation_javafx;
 }

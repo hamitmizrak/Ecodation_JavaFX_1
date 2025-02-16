@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.hamitmizrak.ecodation_javafx.controller.LoginController"
+      spacing="10"
+      alignment="center"
+      stylesheets="@../css/style.css" >
+
+    <Label text="Kullanıcı Adı" style="-fx-font-size:18px;"/>
+    <TextField
+            fx:id="usernameField"
+            promptText="Kullanıcı adınız ..."/>
+
+    <Label text="Kullanıcı Şifresi" style="-fx-font-size:18px;"/>
+    <PasswordField
+            fx:id="passwordField"
+            promptText="Kullanıcı şifre ..."
+            onKeyPressed="#specialOnEnterPressed" />
+
+    <!--Giriş Yap Buton-->
+    <Button text="Giriş Yap" onAction="#login" style="" />
+
+    <!--Kayıt Ol Butonu-->
+    <Button text="Kayıt Ol" onAction="#switchToRegister"  style=""  />
+
+</VBox>
