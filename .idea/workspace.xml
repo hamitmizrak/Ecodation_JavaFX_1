@@ -4,20 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a1212ce-3ae8-41ae-8c7a-6712092485cc" name="Changes" comment="Login, Register">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/Admin.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/login.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/register.fxml" afterDir="false" />
+    <list default="true" id="5d4ad486-adc0-4985-ba1a-775509d15f41" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bashscript_jar.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/vatcalculation/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/vatcalculation/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/vatcalculation/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/vatcalculation/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/vatcalculation/controller/ReceiptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/vatcalculation/controller/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/vatcalculation/dao/ReceiptsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/vatcalculation/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/vatcalculation/databases/SingletonDBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/vatcalculation/databases/h2db_data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/vatcalculation/dto/ReceiptsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/vatcalculation/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/vatcalculation/view/Admin.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/vatcalculation/view/Receipt.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/vatcalculation/view/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/vatcalculation/view/images/dene.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/vatcalculation/view/login.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/vatcalculation/view/register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx.view/Admin.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx.view/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx.view/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx.view/images/login.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx.view/login.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx.view/register.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectDestructing.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_manuel.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShortCut.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/javafx1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/javafx2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/RegisterController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/dao/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/database/DBConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/database/mysql_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/vatcalculation/databases/mysql_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/dto/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/vatcalculation/view/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/images/login.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/vatcalculation/view/images/login.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/Admin.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/login.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/register.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +61,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,9 +89,9 @@
     </option>
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="2sDcsYbr0gzzDsNz4dTMjN3GaM8" />
+  <component name="ProjectId" id="2srPCxgtwEDD5yJhSjlQDzVmzaC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -68,39 +102,43 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HelloApplication.executor": "Run",
+    "Application.SingletonDBConnection.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/1_Kodlar/Java Gui/Ecodation_JavaFX_1/src/main/resources/com/hamitmizrak/ecodation_javafx.view",
-    "project.structure.last.edited": "Problems",
+    "last_opened_file_path": "E:/1_Kodlar/Java Gui/Ecodation_JavaFX_1/vatcalculation/src/main/java/com/hamitmizrak/vatcalculation/databases",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap"
+    "settings.editor.selected.configurable": "Errors"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\src\main\resources\com\hamitmizrak\ecodation_javafx.view" />
-      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\src\main\java\com\hamitmizrak\ecodation_javafx" />
-      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1" />
-      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\src\main\resources\com\hamitmizrak\ecodation_javafx\images" />
+      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\vatcalculation\src\main\java\com\hamitmizrak\vatcalculation\databases" />
+      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\vatcalculation\src\main\resources" />
+      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\vatcalculation\src\main\java\com\hamitmizrak\vatcalculation" />
+      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\vatcalculation\src\main\resources\com\hamitmizrak\vatcalculation\view" />
+      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\vatcalculation\src\main\resources\com\hamitmizrak\vatcalculation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\src\main\resources\com\hamitmizrak\ecodation_javafx\view" />
-      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\pictures" />
+      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\vatcalculation\src\main\java\com\hamitmizrak\vatcalculation\controller" />
+      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\vatcalculation\src\main\resources\com\hamitmizrak\vatcalculation\view" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hamitmizrak.vatcalculation.controller" />
+      <recent name="com.hamitmizrak.vatcalculation.dao" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.HelloApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hamitmizrak.ecodation_javafx.HelloApplication" />
-      <module name="Ecodation_JavaFX" />
+      <option name="MAIN_CLASS_NAME" value="com.hamitmizrak.vatcalculation.HelloApplication" />
+      <module name="vatcalculation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hamitmizrak.ecodation_javafx.*" />
+          <option name="PATTERN" value="com.hamitmizrak.vatcalculation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,15 +146,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Ecodation_JavaFX_1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Ecodation_JavaFX_1" />
-      <option name="filePath" />
+    <configuration name="SingletonDBConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hamitmizrak.vatcalculation.databases.SingletonDBConnection" />
+      <module name="vatcalculation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hamitmizrak.vatcalculation.databases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,143 +162,28 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.SingletonDBConnection" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2a1212ce-3ae8-41ae-8c7a-6712092485cc" name="Changes" comment="" />
-      <created>1737993792979</created>
+      <changelist id="5d4ad486-adc0-4985-ba1a-775509d15f41" name="Changes" comment="" />
+      <created>1739210596285</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1737993792979</updated>
+      <updated>1739210596285</updated>
     </task>
-    <task id="LOCAL-00001" summary="Readme.md">
-      <option name="closed" value="true" />
-      <created>1737994706131</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1737994706131</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Mysql, Lombok">
-      <option name="closed" value="true" />
-      <created>1737995872854</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1737995872854</updated>
-    </task>
-    <task id="LOCAL-00003" summary="revize">
-      <option name="closed" value="true" />
-      <created>1737996007713</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1737996007713</updated>
-    </task>
-    <task id="LOCAL-00004" summary="pictures">
-      <option name="closed" value="true" />
-      <created>1737997574558</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1737997574559</updated>
-    </task>
-    <task id="LOCAL-00005" summary="UserDTO">
-      <option name="closed" value="true" />
-      <created>1738596203349</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1738596203349</updated>
-    </task>
-    <task id="LOCAL-00006" summary="DBConnection">
-      <option name="closed" value="true" />
-      <created>1738598888936</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1738598888936</updated>
-    </task>
-    <task id="LOCAL-00007" summary="SQL">
-      <option name="closed" value="true" />
-      <created>1738598905277</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1738598905277</updated>
-    </task>
-    <task id="LOCAL-00008" summary="UserDAO">
-      <option name="closed" value="true" />
-      <created>1738598914895</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1738598914895</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Controller, LoginController, register, UserDTO">
-      <option name="closed" value="true" />
-      <created>1738600613840</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1738600613840</updated>
-    </task>
-    <task id="LOCAL-00010" summary="register.fxml">
-      <option name="closed" value="true" />
-      <created>1739202146042</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1739202146042</updated>
-    </task>
-    <task id="LOCAL-00011" summary="login.fxml">
-      <option name="closed" value="true" />
-      <created>1739204490405</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1739204490405</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Login, Register">
-      <option name="closed" value="true" />
-      <created>1739206020965</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1739206020965</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Readme.md" />
-    <MESSAGE value="Mysql, Lombok" />
-    <MESSAGE value="revize" />
-    <MESSAGE value="pictures" />
-    <MESSAGE value="UserDTO" />
-    <MESSAGE value="DBConnection" />
-    <MESSAGE value="SQL" />
-    <MESSAGE value="UserDAO" />
-    <MESSAGE value="Controller, LoginController, register, UserDTO" />
-    <MESSAGE value="register.fxml" />
-    <MESSAGE value="login.fxml" />
-    <MESSAGE value="Login, Register" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login, Register" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/LoginController.java</url>
-          <line>56</line>
-          <properties class="com.hamitmizrak.ecodation_javafx.controller.LoginController" method="login">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hamitmizrak/vatcalculation/controller/AdminController.java</url>
+          <line>308</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
