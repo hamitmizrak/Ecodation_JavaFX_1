@@ -21,4 +21,5 @@ public class UserDTO {
     // Method
 
     // Getter And Setter
+
 }
