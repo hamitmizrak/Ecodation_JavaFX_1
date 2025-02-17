@@ -74,10 +74,15 @@ public class RegisterController {
         String password = passwordField.getText();
 
         // UserDTO
-        UserDTO user = new UserDTO(0, username, password, email);
+        //UserDTO user = new UserDTO(0, password, email, username);
+        UserDTO user =UserDTO.builder()
+                .id(0)
+                .password(password)
+                .email(email)
+                .build();
 
-        // KAyıt
-        if (userDAO.registerUser(user)) {
+        // Kayıt
+        if (userDAO.create(user)) {
             showAlert("Başarılı", "Kayıt Başarılı", Alert.AlertType.INFORMATION);
 
             // Kayıt başarılı ise Giriş(Login) Sayfaına yönlendirsin.

@@ -21,7 +21,6 @@ import java.sql.SQLException;
 /*
     @FXML, JavaFX uygulamalarında kullanılan bir annotation (notasyon) olarak, bir sınıfın içinde bulunan field, metot veya constructor'un, FXML dosyasındaki bileşenler ya da olay işleyiciler ile bağlanmasını sağlar.
 */
-
 public class LoginController {
 
     // Field (Veri tabanı işlemleri için)

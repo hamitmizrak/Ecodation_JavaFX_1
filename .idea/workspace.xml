@@ -4,8 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a1212ce-3ae8-41ae-8c7a-6712092485cc" name="Changes" comment="jar">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="2a1212ce-3ae8-41ae-8c7a-6712092485cc" name="Changes" comment="jar revized">
+      <change afterPath="$PROJECT_DIR$/pictures/javafx3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/javafx4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/javafx5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/dao/IDaoImplements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h2db/user_managementAUTO_SERVER=TRUE.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/h2db/user_managementAUTO_SERVER=TRUE.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/database/SingletonDBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/database/SingletonDBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/Admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/Admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/HelloApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/controller/RegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/database/SingletonDBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/database/SingletonDBConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/dto/UserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/view/Admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/view/Admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/view/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/view/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hamitmizrak/ecodation_javafx/view/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -65,7 +93,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/1_Kodlar/Java Gui/Ecodation_JavaFX_1/vatcalculation/src/main/java/com/hamitmizrak/ecodation_javafx",
+    "last_opened_file_path": "E:/1_Kodlar/Java Gui/Ecodation_JavaFX_1/vatcalculation/pictures",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -74,11 +102,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\vatcalculation\pictures" />
       <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\vatcalculation\src\main\java\com\hamitmizrak\ecodation_javafx" />
       <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\vatcalculation\src\main\resources\com\hamitmizrak\ecodation_javafx\view" />
       <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\vatcalculation\src\main\java\com\hamitmizrak\ecodation_javafx\database" />
       <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\src\main\resources\com\hamitmizrak\ecodation_javafx.view" />
-      <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\src\main\java\com\hamitmizrak\ecodation_javafx" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\1_Kodlar\Java Gui\Ecodation_JavaFX_1\src\main\resources\com\hamitmizrak\ecodation_javafx\view" />
@@ -288,7 +316,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739816697799</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="jar revized">
+      <option name="closed" value="true" />
+      <created>1739816718967</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1739816718967</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -311,6 +347,22 @@
     <MESSAGE value="Start H2DB create table and data added" />
     <MESSAGE value="CRUD Success" />
     <MESSAGE value="jar" />
-    <option name="LAST_COMMIT_MESSAGE" value="jar" />
+    <MESSAGE value="jar revized" />
+    <option name="LAST_COMMIT_MESSAGE" value="jar revized" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/dao/UserDAO.java</url>
+          <line>58</line>
+          <properties class="com.hamitmizrak.ecodation_javafx.dao.UserDAO" method="update">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

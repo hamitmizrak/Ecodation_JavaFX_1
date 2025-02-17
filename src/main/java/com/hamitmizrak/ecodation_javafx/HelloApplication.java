@@ -26,6 +26,7 @@ public class HelloApplication extends Application {
         stage.show();
     }
 
+    // Database Başlangıçtaki değeri
     private void initializeDatabase() {
         try {
             Connection conn = SingletonDBConnection.getConnection(); // STATIC BAĞLANTI ALINDI

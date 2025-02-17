@@ -8,8 +8,9 @@
             <TableView fx:id="userTable">
                 <columns>
                     <TableColumn fx:id="idColumn" text="ID"/>
-                    <TableColumn fx:id="usernameColumn" text="Kullanıcı Adı"/>
+
                     <TableColumn fx:id="emailColumn" text="E-Posta"/>
+                    <TableColumn fx:id="usernameColumn" text="Kullanıcı Adı"/>
                     <TableColumn fx:id="passwordColumn" text="Şifre"/>
                 </columns>
             </TableView>

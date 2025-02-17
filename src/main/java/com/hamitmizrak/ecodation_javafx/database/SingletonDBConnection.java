@@ -38,6 +38,7 @@ public class SingletonDBConnection {
     }
 
     // import java.sql.Connection;
+    // getConnection
     public static Connection getConnection() {
         if (connection == null) {
             try {

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- JavaFX FXML belgesi -->
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 
 <!-- Ana kaplama düzeni olarak VBox kullanılıyor -->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
 <VBox
         xmlns="http://javafx.com/javafx/8"
         xmlns:fx="http://javafx.com/fxml/1"
@@ -12,7 +12,7 @@
         spacing="10"
         alignment="CENTER"
         style="-fx-padding: 20;"
-        stylesheets="@css/style.css">
+        stylesheets="@css/styles.css">
 
     <!-- Uygulama başlığını göstermek için bir etiket -->
     <Label

@@ -69,7 +69,7 @@ public class AdminController {
     ///////////////////////////////////////////////////////////////////////////
     @FXML
     private void refreshTable() {
-        List<UserDTO> users = userDAO.getAllUsers();
+        List<UserDTO> users = userDAO.list();
         ObservableList<UserDTO> userObservableList = FXCollections.observableArrayList(users);
         userTable.setItems(userObservableList);
         showAlert("Bilgi", "Tablo başarıyla yenilendi!", Alert.AlertType.INFORMATION);
@@ -145,7 +145,7 @@ public class AdminController {
 
                     // Kullanıcıyı ekle
                     UserDTO newUser = new UserDTO(0, username, password, email);
-                    if (userDAO.registerUser(newUser)) {
+                    if (userDAO.create(newUser)) {
                         showAlert("Başarılı", "Kullanıcı başarıyla eklendi!", Alert.AlertType.INFORMATION);
                         refreshTable();
                     } else {
@@ -157,7 +157,6 @@ public class AdminController {
     }
 
     ///////////////////////////////////////////////////////////////////////////
-    /// /////////////////////////////////////////////////////////////////////////////////////////////////
     @FXML
     private void updateUser() {
         // Seçilen kullanıcıyı güncelle
@@ -201,7 +200,7 @@ public class AdminController {
                         selectedUser.setPassword(password);
                         selectedUser.setEmail(email);
 
-                        if (userDAO.updateUser(selectedUser)) {
+                        if (userDAO.update(selectedUser)) {
                             showAlert("Başarılı", "Kullanıcı başarıyla güncellendi!", Alert.AlertType.INFORMATION);
                             refreshTable();
                         } else {
@@ -215,7 +214,7 @@ public class AdminController {
         }
     }
 
-    /// /////////////////////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////////////
     @FXML
     private void deleteUser() {
         // Seçilen kullanıcıyı al
@@ -232,7 +231,7 @@ public class AdminController {
             Optional<ButtonType> result = confirmationAlert.showAndWait();
             if (result.isPresent() && result.get() == ButtonType.OK) {
                 // Silme işlemini gerçekleştir
-                if (userDAO.deleteUser(selectedUser.getId())) {
+                if (userDAO.delete(selectedUser.getId())) {
                     showAlert("Başarılı", "Kullanıcı başarıyla silindi!", Alert.AlertType.INFORMATION);
                     refreshTable();
                 } else {
@@ -245,6 +244,6 @@ public class AdminController {
         } else {
             showAlert("Uyarı", "Lütfen bir kullanıcı seçin!", Alert.AlertType.WARNING);
         }
-    }
+    } // end delete
 
-}
+} //end class

@@ -88,7 +88,7 @@
             <version>1.6.2</version>
         </dependency>
 
-        <!-- Apache POI -->
+        <!-- Apache POI: Excel -->
         <!--excel -->
         <dependency>
             <groupId>org.apache.poi</groupId>
