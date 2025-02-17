@@ -17,6 +17,10 @@ register.fxml ile ekran oluşturacağım.
 
 public class RegisterController {
 
+    // Field (Veri tabanı işlemleri için)
+    private UserDAO userDAO = new UserDAO();
+
+    ///////////////////////////////////////////////////////////////////////////////////////
     @FXML
     private TextField usernameField;
 
@@ -26,15 +30,17 @@ public class RegisterController {
     @FXML
     private TextField passwordField;
 
-    // Field
-    private UserDAO userDAO = new UserDAO();
-
     /////////////////////////////////////////////////////////////////////////////////////////
     // ShowAlert
+    /// //////////////////////////////////////////////////////////////////////////////////////
+    // ShowAlert (Kullanıcıya bilgi veya hata mesajları göstermek için kullanılan yardımcı metot)
     private void showAlert(String title, String message, Alert.AlertType type) {
+        // Alert nesnesi oluşturuyoruz ve parametre olarak alınan başlık, mesaj ve tipi ayarlıyoruz
         Alert alert = new Alert(type);
         alert.setTitle(title);
         alert.setContentText(message);
+
+        // Alert penceresini gösteriyoruz ve kullanıcıdan bir yanıt bekliyoruz
         alert.showAndWait();
     } //end showAlert
 
@@ -58,7 +64,6 @@ public class RegisterController {
             showAlert("Hata", "Giriş Ekranına Geçiş Sırasında Hata meydana geldi", Alert.AlertType.ERROR);
         }
     } //end switchToLogin
-
 
     /////////////////////////////////////////////////////////////////////////////////////////
     // Register

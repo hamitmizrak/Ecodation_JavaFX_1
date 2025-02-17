@@ -1,30 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- JavaFX FXML belgesi -->
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.VBox?>
-<VBox
-      xmlns="http://javafx.com/javafx"
-      xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.hamitmizrak.ecodation_javafx.controller.LoginController"
-      spacing="10"
-      alignment="center"
-      stylesheets="@../css/style.css" >
+<?import javafx.scene.layout.*?>
 
-    <Label text="Kullanıcı Adı" style="-fx-font-size:18px;"/>
+<!-- Ana kaplama düzeni olarak VBox kullanılıyor -->
+<VBox
+        xmlns="http://javafx.com/javafx/8"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.hamitmizrak.ecodation_javafx.controller.LoginController"
+        spacing="10"
+        alignment="CENTER"
+        style="-fx-padding: 20;"
+        stylesheets="@css/style.css">
+
+    <!-- Uygulama başlığını göstermek için bir etiket -->
+    <Label
+            text="Kullanıcı Girişi"
+            style="-fx-font-size: 18px;"
+    />
+
+    <!-- Kullanıcı adını girmek için bir TextField -->
     <TextField
             fx:id="usernameField"
-            promptText="Kullanıcı adınız ..."/>
+            promptText="Kullanıcı Adı"
+    />
 
-    <Label text="Kullanıcı Şifresi" style="-fx-font-size:18px;"/>
+    <!-- Şifreyi girmek için bir PasswordField -->
     <PasswordField
             fx:id="passwordField"
-            promptText="Kullanıcı şifre ..."
-            onKeyPressed="#specialOnEnterPressed" />
+            promptText="Şifre"
+            onKeyPressed="#specialOnEnterPressed"
+    />
 
-    <!--Giriş Yap Buton-->
-    <Button text="Giriş Yap" onAction="#login" style="" />
+    <!-- Giriş yapma işlemini tetiklemek için bir buton -->
+    <Button
+            text="Giriş Yap"
+            onAction="#login"
+            style="-fx-background-color: #2F2F2F; -fx-text-fill: white;"
+    />
 
-    <!--Kayıt Ol Butonu-->
-    <Button text="Kayıt Ol" onAction="#switchToRegister"  style=""  />
+    <!-- Kayıt olma ekranına geçmek için bir buton -->
+    <Button
+            text="Kayıt Ol"
+            onAction="#switchToRegister"
+    />
 
 </VBox>

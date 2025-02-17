@@ -24,7 +24,8 @@ public class SingletonDBConnection {
     */
 
     // H2DB (Singleton olandan)
-    private static final String URL = "jdbc:h2:./database/user_management" + "AUTO_SERVER=TRUE";
+    // H2DB BEllek yerine Disk Tabanlı Veritabanı Kullanımı
+    private static final String URL = "jdbc:h2:./h2db/user_management" + "AUTO_SERVER=TRUE";
     private static final String USERNAME = "sa";
     private static final String PASSWORD = "";
 
@@ -37,15 +38,15 @@ public class SingletonDBConnection {
     }
 
     // import java.sql.Connection;
-    public static Connection getConnection() throws SQLException {
+    public static Connection getConnection() {
         if (connection == null) {
             try {
                 connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-                System.out.println(SpecialColor.CYAN+"Database Disk Veritabanına başarıyla sağlandı."+SpecialColor.RESET);
-            } catch (Exception e) {
-                System.out.println(SpecialColor.RED+"Database Disk Veritabanına başarıyla bağlanılmadı."+SpecialColor.RESET);
-                e.printStackTrace();
-                throw new RuntimeException("Database Veri tabanınan bağlanılmadı");
+                System.out.println(SpecialColor.CYAN+"H2DB Database Disk Veritabanına başarıyla sağlandı."+SpecialColor.RESET);
+            } catch (SQLException sql) {
+                System.out.println(SpecialColor.RED+"H2DB Database Disk Veritabanına başarıyla bağlanılmadı."+SpecialColor.RESET);
+                sql.printStackTrace();
+                throw new RuntimeException("H2DB Database Veri tabanınan bağlanılmadı");
             }
         } else {
             try {
@@ -56,8 +57,8 @@ public class SingletonDBConnection {
             } catch (Exception e) {
                 System.out.println(SpecialColor.BLUE+"Veri tabanınan bağlanılmadı"+SpecialColor.RESET);
                 e.printStackTrace();
-                System.out.println("Veri tabanınan bağlanılmadı");
-                throw new RuntimeException("Veri tabanınan bağlanılmadı");
+                System.out.println("H2DB Veri tabanınan bağlanılmadı");
+                throw new RuntimeException("H2DB Veri tabanınan bağlanılmadı");
             }
         }
         return connection;
