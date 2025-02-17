@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- JavaFX FXML belgesi -->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Ana kaplama düzeni olarak VBox kullanılıyor -->
+<VBox
+        xmlns="http://javafx.com/javafx/8"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.hamitmizrak.ecodation_javafx.controller.LoginController"
+        spacing="10"
+        alignment="CENTER"
+        style="-fx-padding: 20;"
+        stylesheets="@css/style.css">
+
+    <!-- Uygulama başlığını göstermek için bir etiket -->
+    <Label
+            text="Kullanıcı Girişi"
+            style="-fx-font-size: 18px;"
+    />
+
+    <!-- Kullanıcı adını girmek için bir TextField -->
+    <TextField
+            fx:id="usernameField"
+            promptText="Kullanıcı Adı"
+    />
+
+    <!-- Şifreyi girmek için bir PasswordField -->
+    <PasswordField
+            fx:id="passwordField"
+            promptText="Şifre"
+            onKeyPressed="#specialOnEnterPressed"
+    />
+
+    <!-- Giriş yapma işlemini tetiklemek için bir buton -->
+    <Button
+            text="Giriş Yap"
+            onAction="#login"
+            style="-fx-background-color: #2F2F2F; -fx-text-fill: white;"
+    />
+
+    <!-- Kayıt olma ekranına geçmek için bir buton -->
+    <Button
+            text="Kayıt Ol"
+            onAction="#switchToRegister"
+    />
+
+</VBox>

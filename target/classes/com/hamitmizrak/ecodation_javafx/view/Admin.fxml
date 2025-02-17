@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.hamitmizrak.ecodation_javafx.controller.AdminController">
+    <children>
+        <VBox spacing="10" layoutX="10" layoutY="10">
+            <TableView fx:id="userTable">
+                <columns>
+                    <TableColumn fx:id="idColumn" text="ID"/>
+                    <TableColumn fx:id="usernameColumn" text="Kullanıcı Adı"/>
+                    <TableColumn fx:id="emailColumn" text="E-Posta"/>
+                    <TableColumn fx:id="passwordColumn" text="Şifre"/>
+                </columns>
+            </TableView>
+
+            <HBox spacing="10">
+                <Button text="Kullanıcı Ekle" onAction="#addUser"/>
+                <Button text="Kullanıcı Güncelle" onAction="#updateUser"/>
+                <Button text="Kullanıcı Sil" onAction="#deleteUser"/>
+            </HBox>
+
+            <HBox spacing="10">
+                <Button text="Tabloyu Yenile" onAction="#refreshTable"/>
+                <Button text="Çıkış Yap" onAction="#logout"/>
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

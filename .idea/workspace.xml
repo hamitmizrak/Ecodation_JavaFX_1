@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a1212ce-3ae8-41ae-8c7a-6712092485cc" name="Changes" comment="Start H2DB create table and data added">
+    <list default="true" id="2a1212ce-3ae8-41ae-8c7a-6712092485cc" name="Changes" comment="CRUD Success">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/database/SingletonDBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/database/SingletonDBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamitmizrak/ecodation_javafx/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/images/login.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/Admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/Admin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hamitmizrak/ecodation_javafx/view/register.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739810147101</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="CRUD Success">
+      <option name="closed" value="true" />
+      <created>1739816652046</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1739816652046</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -306,6 +302,7 @@
     <MESSAGE value="paketlere, programlaam izin verildi&#10;(mpdule-info.java)" />
     <MESSAGE value="H2Db singleton design pattern" />
     <MESSAGE value="Start H2DB create table and data added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start H2DB create table and data added" />
+    <MESSAGE value="CRUD Success" />
+    <option name="LAST_COMMIT_MESSAGE" value="CRUD Success" />
   </component>
 </project>
