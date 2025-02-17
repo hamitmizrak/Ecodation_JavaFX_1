@@ -1,5 +1,7 @@
 package com.hamitmizrak.ecodation_javafx.database;
 
+import com.hamitmizrak.ecodation_javafx.utils.SpecialColor;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -39,20 +41,22 @@ public class SingletonDBConnection {
         if (connection == null) {
             try {
                 connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-                System.out.println("H2 Disk Veritabanına başarıyla sağlandı.");
+                System.out.println(SpecialColor.CYAN+"Database Disk Veritabanına başarıyla sağlandı."+SpecialColor.RESET);
             } catch (Exception e) {
+                System.out.println(SpecialColor.RED+"Database Disk Veritabanına başarıyla bağlanılmadı."+SpecialColor.RESET);
                 e.printStackTrace();
-                throw new RuntimeException("Veri tabanınan bağlanılmadı");
+                throw new RuntimeException("Database Veri tabanınan bağlanılmadı");
             }
         } else {
             try {
                 if(connection.isClosed()){
                     connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-                    System.out.println("H2 Disk Veritabanı yeniden oluşturuldu.");
+                    System.out.println(SpecialColor.BLUE+"H2DB Disk Veritabanı yeniden oluşturuldu."+SpecialColor.RESET);
                 }
-
             } catch (Exception e) {
+                System.out.println(SpecialColor.BLUE+"Veri tabanınan bağlanılmadı"+SpecialColor.RESET);
                 e.printStackTrace();
+                System.out.println("Veri tabanınan bağlanılmadı");
                 throw new RuntimeException("Veri tabanınan bağlanılmadı");
             }
         }
@@ -65,8 +69,10 @@ public class SingletonDBConnection {
             try{
                 connection.close();
                 connection=null;
-                System.out.println("H2Db Veritabanı bağlantısı kapatıldı");
+                System.out.println("Database Veritabanı bağlantısı kapatıldı");
+                System.out.println(SpecialColor.YELLOW+"Database Veritabanı bağlantısı kapatıldı"+SpecialColor.RESET);
             } catch (SQLException e) {
+                System.out.println(SpecialColor.RED+"Database Kapatılmadı"+SpecialColor.RESET);
                 e.printStackTrace();
                 throw new RuntimeException(e);
             }

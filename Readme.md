@@ -35,9 +35,12 @@ Build => Rebuild Project
 Build => Rebuild Project
 ```
 
-## 
+## Maven Codes
 ```sh 
-
+mvn clean
+mvn clean install
+mvn clean package
+mvn clean package -DskipTests
 ```
 
 ## 

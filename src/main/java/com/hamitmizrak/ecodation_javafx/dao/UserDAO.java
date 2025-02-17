@@ -6,6 +6,7 @@ import com.hamitmizrak.ecodation_javafx.dto.UserDTO;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +17,7 @@ public class UserDAO {
     private Connection connection;
 
     // Constructor (Database bağla)
-    public UserDAO() {
+    public UserDAO() throws SQLException {
         this.connection = SingletonDBConnection.getConnection();
     }
 

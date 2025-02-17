@@ -13,6 +13,8 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
+import java.sql.SQLException;
+
 // import javafx.scene.control.TextField;
 // FXML dosyasındaki bileşeni Controller sınıfdındaki değişkene bağlar.
 //@FXML
