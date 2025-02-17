@@ -1,6 +1,6 @@
 package com.hamitmizrak.ecodation_javafx.dao;
 
-import com.hamitmizrak.ecodation_javafx.database.DBConnection;
+import com.hamitmizrak.ecodation_javafx.database.SingletonDBConnection;
 import com.hamitmizrak.ecodation_javafx.dto.UserDTO;
 
 import java.sql.Connection;
@@ -17,7 +17,7 @@ public class UserDAO {
 
     // Constructor (Database bağla)
     public UserDAO() {
-        this.connection = DBConnection.getConnection();
+        this.connection = SingletonDBConnection.getConnection();
     }
 
     /// ////////////////////////////////////////////////////////////
