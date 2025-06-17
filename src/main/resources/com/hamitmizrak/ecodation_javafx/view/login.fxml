@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- JavaFX FXML belgesi -->
-
 <!-- Ana kaplama düzeni olarak VBox kullanılıyor -->
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.VBox?>
@@ -45,5 +44,4 @@
             text="Kayıt Ol"
             onAction="#switchToRegister"
     />
-
 </VBox>
